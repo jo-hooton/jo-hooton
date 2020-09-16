@@ -73,6 +73,14 @@ nav {
   animation: transform-o-4 2s ease-in-out;
 }
 
+@media (prefers-reduced-motion) {
+  #o-1,
+  #o-3,
+  #o-4 {
+    animation: none;
+  }
+}
+
 #j {
   width: 2.7em;
 }
