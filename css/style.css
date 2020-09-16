@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+body {
+  background-color: #222;
+  color: white;
+  font-family: Helvetica;
+}
+
+.name-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: space-between;
+  font-family: "Krona One", sans-serif;
+}
+
+.nav-link {
+  color: white;
+  padding: 0 1em;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 6em;
+  text-align: center;
+  animation: fade-in 3s ease-in-out;
+}
+
+.nav-link-icon {
+  max-width: 4em;
+  max-height: 4em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+}
+
+.letter-border {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+
+#o-1,
+#o-2,
+#o-3,
+#o-4 {
+  width: 5em;
+  margin-left: -0.6em;
+}
+
+#o-1 {
+  animation: transform-o-1 2s ease-in-out;
+}
+
+#o-3 {
+  animation: transform-o-3 2s ease-in-out;
+}
+
+#o-4 {
+  animation: transform-o-4 2s ease-in-out;
+}
+
+#j {
+  width: 2.7em;
+}
+
+#h {
+  width: 4.6em;
+  margin-left: 2.5em;
+}
+
+#t {
+  width: 3.5em;
+  margin-left: -0.6em;
+}
+
+#n {
+  width: 4.6em;
+  margin-left: -0.6em;
+}
+
+@keyframes transform-o-1 {
+  0% {
+    transform: translate(11.52em, 0);
+  }
+  40% {
+    transform: translate(11.52em, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes transform-o-3 {
+  0% {
+    transform: translate(-4.39em, 0);
+  }
+  40% {
+    transform: translate(-4.39em, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes transform-o-4 {
+  0% {
+    transform: translate(-11.69em, 0);
+  }
+  40% {
+    transform: translate(-11.69em, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, -0.7em);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0, -0.7em);
+  }
+  100% {
+    opacity: 1;
+  }
+}
